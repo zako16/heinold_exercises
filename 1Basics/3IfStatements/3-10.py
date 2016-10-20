@@ -11,3 +11,15 @@ Wrong. The answer is 48.
 Question 10: 7 x 7 = 49
 Right.
 """
+from random import randint
+
+for i in range(10):
+    numberOne = randint(1, 10)
+    numberTwo = randint(1, 10)
+    answer = numberTwo * numberOne
+    print("Question: ", numberOne, " x ", numberTwo, " = ", end = "")
+    playerNumber = eval(input())
+    if answer == playerNumber:
+        print("Right")
+    elif playerNumber != answer:
+        print("Wrong. The answer is ", answer)
