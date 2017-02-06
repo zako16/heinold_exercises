@@ -6,3 +6,9 @@ new_string . Typical output is shown below:
 Enter your string: Qbert
 Q*ert!!!
 """
+user_string = input('Enter your string:')
+new_string = user_string[:1]
+new_string += '*'
+new_string += user_string[2:]
+new_string += '!!!'
+print(new_string)
